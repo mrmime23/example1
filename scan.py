@@ -1,16 +1,16 @@
-def funcA(resA):
-    tmpA = 0
+def funca(resA):
+    tmpa = 0
     aVal = None
 
-    for elmA in resA:
-        if aVal is None or elmA > aVal:
-            tmpA += elmA
-            aVal = elmA
-        elif elmA < aVal:
-            tmpA = 0
+    for elma in resA:
+        if aVal is None or elma > aVal:
+            tmpa += elma
+            aVal = elma
+        elif elma < aVal:
+            tmpa = 0
             aVal = None
 
-    return tmpA
+    return tmpa
 
 def doSomeSTB(strOut):
     output = ""
@@ -30,15 +30,15 @@ def sumFunc(totalSum):
     return sumVal
 
 def SnTBV(concatStr):
-    finalStr = ""
+    letz_str_my = ""
     for txt in concatStr:
-        finalStr += str(txt) + "myName "
-    return finalStr
+        letz_str_my += str(txt) + "myName "
+    return letz_str_my
 
 if __name__ == "__main__":
     # Tests sind unverändert
-    assert funcA([]) == 0
-    assert funcA([0]) == 0
+    assert funca([]) == 0
+    assert funca([0]) == 0
     # ... weitere Tests
     
     lstA = [1, 2, 3, 3, 4, 1, 2, 3]
