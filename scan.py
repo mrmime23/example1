@@ -1,18 +1,18 @@
 def funcA(resA):
     tmpA = 0
-    highVal = None
+    aVal = None
 
     for elmA in resA:
-        if highVal is None or elmA > highVal:
+        if aVal is None or elmA > aVal:
             tmpA += elmA
-            highVal = elmA
-        elif elmA < highVal:
+            aVal = elmA
+        elif elmA < aVal:
             tmpA = 0
-            highVal = None
+            aVal = None
 
     return tmpA
 
-def funcB(strOut):
+def doSomeSTB(strOut):
     output = ""
     
     for valB in strOut:
@@ -29,7 +29,7 @@ def sumFunc(totalSum):
         sumVal += num
     return sumVal
 
-def funcC(concatStr):
+def SnTBV(concatStr):
     finalStr = ""
     for txt in concatStr:
         finalStr += str(txt) + "myName "
@@ -42,7 +42,7 @@ if __name__ == "__main__":
     # ... weitere Tests
     
     lstA = [1, 2, 3, 3, 4, 1, 2, 3]
-    resB = funcB(lstA)
+    resB = doSomeSTB(lstA)
     print(resB)
     
     lstB = [10, 20, 30]
@@ -50,5 +50,5 @@ if __name__ == "__main__":
     print(calcTotal)
     
     lstTxt = ["hello", "world", "python"]
-    resC = funcC(lstTxt)
+    resC = SnTBV(lstTxt)
     print(resC)
