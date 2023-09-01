@@ -29,7 +29,7 @@ def newFunction(d):
         sum += z
     return sum
 
-def last_function(e):
+def lastFunction(e):
     eResult = ""
     for w in e:
         eResult += str(w) + "myName "
@@ -61,5 +61,5 @@ if __name__ == "__main__":
     print(sumResult)
     
     name_list = ["hello", "world", "python"]
-    name_results = last_function(name_list)
+    name_results = lastFunction(name_list)
     print(name_results)
