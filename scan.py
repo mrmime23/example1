@@ -24,10 +24,10 @@ def otherFunction(c):
     return cResult
 
 def newFunction(d):
-    Dsum = 0
+    sum = 0
     for z in d:
-        dSum += z
-    return dSum
+        sum += z
+    return sum
 
 def last_function(e):
     eResult = ""
