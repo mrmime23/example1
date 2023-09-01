@@ -1,6 +1,6 @@
 def expandedFunction(b):
-    bNumber = 0
-    q = None
+    BNumber = 0
+    qOne = None
 
     for x in b:
         if q is None or x > q:
@@ -24,7 +24,7 @@ def otherFunction(c):
     return cResult
 
 def newFunction(d):
-    dSum = 0
+    Dsum = 0
     for z in d:
         dSum += z
     return dSum
@@ -52,7 +52,7 @@ if __name__ == "__main__":
     assert expandedFunction([1, 2, 3, 4, 1, 2]) == 2
     assert expandedFunction([1, 3, 5, 42, 1]) == 0
     
-    sample_list = [1, 2, 3, 3, 4, 1, 2, 3]
+    SampleList = [1, 2, 3, 3, 4, 1, 2, 3]
     processed_result = otherFunction(sample_list)
     print(processed_result)
     
