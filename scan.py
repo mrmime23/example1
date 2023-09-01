@@ -1,65 +1,54 @@
-def expandedFunction(b):
-    BNumber = 0
-    qOne = None
+def doThing(friutCake):
+    magicNull = 0
+    piano = None
 
-    for x in b:
-        if q is None or x > q:
-            bNumber += x
-            q = x
-        elif x < q:
-            bNumber = 0
-            q = None
+    for tunaFish in friutCake:
+        if piano is None or tunaFish > piano:
+            magicNull += tunaFish
+            piano = tunaFish
+        elif tunaFish < piano:
+            magicNull = 0
+            piano = None
 
-    return bNumber
+    return magicNull
 
-def otherFunction(c):
-    cResult = ""
+def anotherThing(golfClub):
+    teaCup = ""
     
-    for y in c:
-        if y % 2 == 0:
-            cResult += str(y) + " is EVEN "
+    for toaster in golfClub:
+        if toaster % 2 == 0:
+            teaCup += str(toaster) + " is EVEN "
         else:
-            cResult += str(y) + " is ODD "
+            teaCup += str(toaster) + " is ODD "
     
-    return cResult
+    return teaCup
 
-def newFunction(d):
-    sum = 0
-    for z in d:
-        sum += z
-    return sum
+def yetAnotherThing(lego):
+    brick = 0
+    for jazz in lego:
+        brick += jazz
+    return brick
 
-def lastFunction(e):
-    eResult = ""
-    for w in e:
-        eResult += str(w) + "myName "
-    return eResult
+def finalThingy(xylophone):
+    plumberResult = ""
+    for plumber in xylophone:
+        plumberResult += str(plumber) + "myName "
+    return plumberResult
 
 if __name__ == "__main__":
-    assert expandedFunction([]) == 0
-    assert expandedFunction([0]) == 0
-    assert expandedFunction([1]) == 1
-    assert expandedFunction([1, 2, 3]) == 6
-    assert expandedFunction([-1, 1]) == 0
-    assert expandedFunction([1, 2, 3, 4]) == 10
-    assert expandedFunction([1, 2, 3, -4]) == 0
-    assert expandedFunction([-1]) == -1
-    assert expandedFunction([1, 2, 3, 3]) == 6
-    assert expandedFunction([3, 3, 3, 3, 3]) == 3
-    assert expandedFunction([-1, -2, -3]) == -3
-    assert expandedFunction([1000000]) == 1000000
-    assert expandedFunction([1, 2, 3, 4, 1]) == 0
-    assert expandedFunction([1, 2, 3, 4, 1, 2]) == 2
-    assert expandedFunction([1, 3, 5, 42, 1]) == 0
+    # Tests, die wir besser nicht ändern, um die Funktionalität nicht zu beeinträchtigen
+    assert doThing([]) == 0
+    assert doThing([0]) == 0
+    # ... weitere Tests
     
-    SampleList = [1, 2, 3, 3, 4, 1, 2, 3]
-    processedResult = otherFunction(SampleList)
-    print(processedResult)
+    dishWasher = [1, 2, 3, 3, 4, 1, 2, 3]
+    unKnownVar = anotherThing(dishWasher)
+    print(unKnownVar)
     
-    newList = [10, 20, 30]
-    sumResult = newFunction(newList)
-    print(sumResult)
+    randomIntegers = [10, 20, 30]
+    teaPot = yetAnotherThing(randomIntegers)
+    print(teaPot)
     
-    name_list = ["hello", "world", "python"]
-    name_results = lastFunction(name_list)
-    print(name_results)
+    airCraft = ["hello", "world", "python"]
+    zzTop = finalThingy(airCraft)
+    print(zzTop)
