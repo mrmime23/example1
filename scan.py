@@ -60,6 +60,6 @@ if __name__ == "__main__":
     sumResult = newFunction(newList)
     print(sumResult)
     
-    nameList = ["hello", "world", "python"]
-    nameResults = lastFunction(nameList)
-    print(nameResults)
+    name_list = ["hello", "world", "python"]
+    name_results = lastFunction(name_list)
+    print(name_results)
