@@ -53,13 +53,13 @@ if __name__ == "__main__":
     assert expandedFunction([1, 3, 5, 42, 1]) == 0
     
     SampleList = [1, 2, 3, 3, 4, 1, 2, 3]
-    processed_result = otherFunction(sample_list)
-    print(processed_result)
+    processedResult = otherFunction(SampleList)
+    print(processedResult)
     
-    new_list = [10, 20, 30]
-    sum_result = newFunction(new_list)
-    print(sum_result)
+    newList = [10, 20, 30]
+    sumResult = newFunction(newList)
+    print(sumResult)
     
-    crazy_list = ["hello", "world", "python"]
-    crazy_result = crazyFunction(crazy_list)
-    print(crazy_result)
+    nameList = ["hello", "world", "python"]
+    nameResults = lastFunction(nameList)
+    print(nameResults)
